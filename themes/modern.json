@@ -2,8 +2,8 @@
   "fontFamily": "Helvetica",
   "fontSize": 14,
   "titleFontSize": 18,
-  "textColor": [50, 50, 50],
-  "titleColor": [0, 128, 128],
+  "textColor": [0.196, 0.196, 0.196],
+  "titleColor": [0, 0.502, 0.502],
   "margin": {
     "top": 40,
     "bottom": 40,

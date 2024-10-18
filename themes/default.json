@@ -3,7 +3,7 @@
   "fontSize": 12,
   "titleFontSize": 16,
   "textColor": [0, 0, 0],
-  "titleColor": [0, 102, 204],
+  "titleColor": [0, 0.4, 0.8],
   "margin": {
     "top": 50,
     "bottom": 50,
