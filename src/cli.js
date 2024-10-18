@@ -52,4 +52,22 @@ const theme = JSON.parse(fs.readFileSync(themePath));
 
 console.log('All information collected!');
 
-generatePDF();
+generatePDF({
+    company,
+    siret,
+    ape,
+    address,
+    email,
+    phone,
+    clientName,
+    clientCompany,
+    clientAddress,
+    clientEmail,
+    clientPhone,
+    projectTitle,
+    projectDetails,
+    theme,
+    language
+}).then(r => {
+
+});
