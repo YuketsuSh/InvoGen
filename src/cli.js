@@ -3,17 +3,16 @@ const fs = require('fs');
 
 const { generatePDF } = require('./pdfGenerator');
 
-
 console.log("Choose a language: (1) English (2) French");
-const languageChoise = readline.question('Enter the language number: ');
+const languageChoice = readline.question('Enter the language number: ');
 let languagePath = '';
 
-if (languageChoise === '1'){
+if (languageChoice === '1') {
     languagePath = './langs/en.json';
-}else if(languageChoise === '2'){
+} else if (languageChoice === '2') {
     languagePath = './langs/fr.json';
-}else{
-    console.log('Invalid choise, defaulting to English.');
+} else {
+    console.log('Invalid choice, defaulting to English.');
     languagePath = './langs/en.json';
 }
 
@@ -35,13 +34,34 @@ const clientPhone = readline.question(`Enter client ${language.phone}: `);
 const projectTitle = readline.question('Enter project title: ');
 const projectDetails = readline.question('Enter project details: ');
 
-console.log("Choose a PDF theme: (1) Default (2) Modern");
+const items = [];
+let addItem = 'y';
+
+while (addItem.toLowerCase() === 'y') {
+    const itemName = readline.question('Enter the item name: ');
+    const itemDescription = readline.question('Enter the item description: ');
+    const itemQuantity = readline.question('Enter the quantity: ');
+    const itemPrice = readline.question('Enter the unit price: ');
+
+    items.push({
+        name: itemName,
+        description: itemDescription,
+        quantity: parseInt(itemQuantity),
+        price: parseFloat(itemPrice)
+    });
+
+    addItem = readline.question('Do you want to add another item? (y/n): ');
+}
+
+console.log("Choose a PDF theme: (1) Default (2) Classic (3) Modern");
 const themeChoice = readline.question('Enter the theme number: ');
 let themePath = '';
 
 if (themeChoice === '1') {
     themePath = './themes/default.json';
 } else if (themeChoice === '2') {
+    themePath = './themes/classic.json';
+} else if (themeChoice === '3') {
     themePath = './themes/modern.json';
 } else {
     console.log('Invalid choice, defaulting to Default theme.');
@@ -49,8 +69,6 @@ if (themeChoice === '1') {
 }
 
 const theme = JSON.parse(fs.readFileSync(themePath));
-
-console.log('All information collected!');
 
 generatePDF({
     company,
@@ -66,8 +84,11 @@ generatePDF({
     clientPhone,
     projectTitle,
     projectDetails,
+    items,
     theme,
     language
-}).then(r => {
-
+}).then((fileName) => {
+    console.log(`PDF generated successfully: ${fileName}`);
+}).catch(err => {
+    console.error('Error generating PDF:', err);
 });

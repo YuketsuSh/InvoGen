@@ -2,11 +2,16 @@
   "companyInfoTitle": "Company Information",
   "clientInfoTitle": "Client Information",
   "projectDetailsTitle": "Project Details",
-  "termsAndConditionsTitle": "Terms and Conditions",
-  "paymentConditions": "Payment Conditions",
-  "deliveryConditions": "Delivery Time",
-  "pageTitle": "Invoice - InvoGen",
-  "totalAmount": "Total Amount",
+  "itemsServices": "Items/Services",
+  "qty": "Quantity",
+  "unitPrice": "Unit Price",
+  "total": "Total",
+  "address": "Address",
+  "company": "Company",
+  "email": "Email",
   "phone": "Phone",
-  "email": "Email"
+  "totalAmount": "Total Amount",
+  "siret": "Business Registration Number",
+  "ape": "Industry Code",
+  "totalPrice": "Total Price"
 }

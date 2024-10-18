@@ -2,11 +2,16 @@
   "companyInfoTitle": "Informations de l'entreprise",
   "clientInfoTitle": "Informations du client",
   "projectDetailsTitle": "Détails du projet",
-  "termsAndConditionsTitle": "Conditions générales",
-  "paymentConditions": "Conditions de paiement",
-  "deliveryConditions": "Délais de livraison",
-  "pageTitle": "Devis - InvoGen",
-  "totalAmount": "Montant total",
+  "itemsServices": "Articles/Services",
+  "qty": "Quantité",
+  "unitPrice": "Prix unitaire",
+  "total": "Total",
+  "address": "Adresse",
+  "company": "Société",
+  "email": "Email",
   "phone": "Téléphone",
-  "email": "Email"
+  "totalAmount": "Montant total",
+  "siret": "SIRET",
+  "ape": "APE",
+  "totalPrice": "Montant total"
 }
