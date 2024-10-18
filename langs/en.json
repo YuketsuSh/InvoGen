@@ -1,0 +1,12 @@
+{
+  "companyInfoTitle": "Company Information",
+  "clientInfoTitle": "Client Information",
+  "projectDetailsTitle": "Project Details",
+  "termsAndConditionsTitle": "Terms and Conditions",
+  "paymentConditions": "Payment Conditions",
+  "deliveryConditions": "Delivery Time",
+  "pageTitle": "Invoice - InvoGen",
+  "totalAmount": "Total Amount",
+  "phone": "Phone",
+  "email": "Email"
+}
