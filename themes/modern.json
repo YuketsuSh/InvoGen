@@ -1,0 +1,13 @@
+{
+  "fontFamily": "Helvetica",
+  "fontSize": 14,
+  "titleFontSize": 18,
+  "textColor": [50, 50, 50],
+  "titleColor": [0, 128, 128],
+  "margin": {
+    "top": 40,
+    "bottom": 40,
+    "left": 40,
+    "right": 40
+  }
+}
