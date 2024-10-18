@@ -1,6 +1,9 @@
 const readline = require('readline-sync');
 const fs = require('fs');
 
+const { generatePDF } = require('./pdfGenerator');
+
+
 console.log("Choose a language: (1) English (2) French");
 const languageChoise = readline.question('Enter the language number: ');
 let languagePath = '';
@@ -48,3 +51,5 @@ if (themeChoice === '1') {
 const theme = JSON.parse(fs.readFileSync(themePath));
 
 console.log('All information collected!');
+
+generatePDF();
