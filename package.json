@@ -1,0 +1,23 @@
+{
+  "name": "invogen",
+  "version": "1.0.0",
+  "description": "InvoGen is an open-source tool that generates professional PDF quotes with customizable templates and multilingual support. Perfect for freelancers and businesses, easily create quotes in multiple languages and export them in stylish PDF formats.",
+  "main": "src/cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuketsuSh/InvoGen.git"
+  },
+  "author": "Yuketsu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YuketsuSh/InvoGen/issues"
+  },
+  "homepage": "https://github.com/YuketsuSh/InvoGen#readme",
+  "dependencies": {
+    "pdf-lib": "^1.17.1",
+    "readline-sync": "^1.4.10"
+  }
+}
