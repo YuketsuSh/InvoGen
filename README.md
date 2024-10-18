@@ -74,7 +74,7 @@ Example of a theme JSON file:
 
 ```json
 {
-  "fontFamily": "Helvetica",
+  "fontFamily": "NotoSans",
   "fontSize": 14,
   "titleFontSize": 18,
   "textColor": [50, 50, 50],
@@ -98,17 +98,27 @@ Currently supported languages:
 - **English** (en)
 - **French** (fr)
 
-You can add support for more languages by adding a new JSON file in the `languages/` folder. Example of a language file:
+You can add support for more languages by adding a new JSON file in the `langs/` folder. Example of a language file:
 
 ```json
 {
-  "companyInfoTitle": "Company Information",
-  "clientInfoTitle": "Client Information",
-  "projectDetailsTitle": "Project Details",
-  "totalAmount": "Total Amount",
-  "phone": "Phone",
-  "email": "Email"
+   "companyInfoTitle": "Company Information",
+   "clientInfoTitle": "Client Information",
+   "projectDetailsTitle": "Project Details",
+   "itemsServices": "Items/Services",
+   "qty": "Quantity",
+   "unitPrice": "Unit Price",
+   "total": "Total",
+   "address": "Address",
+   "company": "Company",
+   "email": "Email",
+   "phone": "Phone",
+   "totalAmount": "Total Amount",
+   "siret": "Business Registration Number",
+   "ape": "Industry Code",
+   "totalPrice": "Total Price"
 }
+
 ```
 
 ---
