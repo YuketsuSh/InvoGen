@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/YuketsuSh/InvoGen#readme",
   "dependencies": {
+    "fs": "^0.0.1-security",
     "pdf-lib": "^1.17.1",
     "readline-sync": "^1.4.10"
   }
